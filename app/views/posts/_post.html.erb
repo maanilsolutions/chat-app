@@ -1,0 +1,7 @@
+	<% @posts.each do |post| %>
+		<div class="well">
+			<p><b>Posted <%= time_ago_in_words(post.created_at)%> ago</b></p>
+			<%= post.message %>
+			 <p class="pull-right"><%= link_to 'Remove', post ,:method => :delete , :confirm => "sure?" %></p>
+		</div>
+	<% end %>

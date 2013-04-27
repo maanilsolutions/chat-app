@@ -1,0 +1,7 @@
+<div class="span8 pull-right">
+<%= form_tag(:controller => 'posts', :action => 'create') do  %>
+	<p><b><%= label_tag(:message, "What are you doing ?")%></b></p>
+	<%= text_area_tag(:message,nil,:class => 'input-xxlarge' )%><br />
+	<%= submit_tag("Update")%>
+<% end %>
+</div>
